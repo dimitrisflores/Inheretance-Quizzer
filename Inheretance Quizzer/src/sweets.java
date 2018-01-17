@@ -1,7 +1,7 @@
 
 public class sweets extends food
 	{
-		private int numberTwo;
+		private int numberTwo = 17;
 		public sweets(int x)
 			{
 			super(x);
@@ -18,5 +18,6 @@ public class sweets extends food
 		public int get()
 			{
 			return numberTwo;
+
 			}
 	}
