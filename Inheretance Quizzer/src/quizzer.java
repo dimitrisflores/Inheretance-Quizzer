@@ -7,6 +7,10 @@ public class quizzer
 		{
 			picQuestions();
 			questionOne();
+			questionTwo();
+			questionThree();
+			questionFour();
+			questionFive();
 		}
 
 		
@@ -22,19 +26,19 @@ public class quizzer
 					}
 				else if(guess.equals("2"))
 					{
-						
+						questionOne();		
 					}
 				else if(guess.equals("3"))
 					{
-						
+						questionOne();		
 					}
 				else if(guess.equals("4"))
 					{
-						
+						questionOne();		
 					}
 				else if(guess.equals("5"))
 					{
-						
+						questionOne();	
 					}
 				else if(guess.equals("6"))
 					{
