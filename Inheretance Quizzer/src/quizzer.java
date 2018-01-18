@@ -1,10 +1,13 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class quizzer
 	{
 		static Scanner userInput = new Scanner(System.in);
+		static ArrayList<food>list = new ArrayList<food>();
 		public static void main(String[] args)
 		{
+			arrayList();
 			picQuestions();
 			questionOne();
 			questionTwo();
@@ -13,7 +16,11 @@ public class quizzer
 			questionFive();
 		}
 
-		
+		public static void arrayList()
+		{
+			list.add(new food());
+			list.add(new sweets());
+		}
 
 		public static void picQuestions()
 			{
@@ -79,6 +86,8 @@ public class quizzer
 					{
 						System.out.println("Yes you are correct.");
 					}
+				Food f = new Food();
+				System.out.println(f.food());
 				
 			}
 		private static void questionTwo()
@@ -104,14 +113,14 @@ public class quizzer
 		}
 		private static void questionThree()
 		{
-			System.out.println("What will Food f = new Food(); System.out.print(f.food());");
-			System.out.println("a. 7");
+			System.out.println("What will Sweets s = new Food(); System.out.print(s.food());");
+			System.out.println("a. Error");
 			System.out.println("b. You have 7 grapes to eat.");
 			System.out.println("c. 7 *nextline* You have 7 grapes to eat.");
 			String guess = userInput.nextLine();
 			if(guess.equals("a"))
 				{
-					System.out.println("Sorry you are wrong.");
+					System.out.println("Yes you are correct.");
 				}
 			else if(guess.equals("b"))
 				{
@@ -119,16 +128,16 @@ public class quizzer
 				}
 			else if(guess.equals("c"))
 				{
-					System.out.println("Yes you are correct.");
+					System.out.println("Sorry you are wrong.");
 				}
 			
 		}
 		private static void questionFour()
 		{
-			System.out.println("What will Food f = new Food(); System.out.print(f.food());");
+			System.out.println("What will Food f = new Sweets(); System.out.print(f.grab());");
 			System.out.println("a. 7");
 			System.out.println("b. You have 7 grapes to eat.");
-			System.out.println("c. 7 *nextline* You have 7 grapes to eat.");
+			System.out.println("c. 17");
 			String guess = userInput.nextLine();
 			if(guess.equals("a"))
 				{
@@ -146,14 +155,14 @@ public class quizzer
 		}
 		private static void questionFive()
 		{
-			System.out.println("What will Food f = new Food(); System.out.print(f.food());");
-			System.out.println("a. 7");
+			System.out.println("What will Sweets s= new Sweets(); System.out.print(s.grab());");
+			System.out.println("a. 17");
 			System.out.println("b. You have 7 grapes to eat.");
 			System.out.println("c. 7 *nextline* You have 7 grapes to eat.");
 			String guess = userInput.nextLine();
 			if(guess.equals("a"))
 				{
-					System.out.println("Sorry you are wrong.");
+					System.out.println("Yes you are correct.");
 				}
 			else if(guess.equals("b"))
 				{
@@ -161,7 +170,7 @@ public class quizzer
 				}
 			else if(guess.equals("c"))
 				{
-					System.out.println("Yes you are correct.");
+					System.out.println("Sorry you are incorrect.");
 				}
 				
 		}
