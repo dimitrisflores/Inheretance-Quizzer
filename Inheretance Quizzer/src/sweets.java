@@ -6,6 +6,7 @@ public class sweets extends food
 			{
 			super(x);
 			numberTwo = x;
+			System.out.println("Cake is amazing!");
 			}
 		public int grab()
 			{
